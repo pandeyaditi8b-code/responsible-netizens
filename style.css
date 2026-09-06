@@ -1,0 +1,249 @@
+/* Basic page settings */
+
+* {
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+} 
+
+/* Header */
+
+header{
+    background-color: #173f5f;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 38px;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+/* Navigation Bar */
+
+nav{
+    background-color: #102f45;
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 45px 25px;
+
+}
+
+section h2 {
+    color: #173f5f;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+section h3{
+    color: #20639b;
+}
+
+/* Home */
+#home{
+    text-align: center;
+    background-color: white;
+    max-width: none;
+    padding: 70px 20px;
+}
+
+#home h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+#home p {
+    max-width: 750px;
+    margin: 10px auto;
+    font-size: 24px;
+}
+
+/* Safety boxes */
+
+.box{
+    display: inline-block;
+    vertical-align: top;
+    width: 46%;
+    min-height: 170px;
+    margin: 1.5%;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #d5dce5;
+    border-radius: 8px;
+}
+
+.box h3 {
+    margin-top: 0;
+}
+
+/* Social Media */
+
+#social {
+    background-color: white;
+    max-width: none;
+    padding-left: 15%;
+    border-radius: 5px;
+}
+
+.question button {
+    background-color: #20639b;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.question button:hover {
+    background-color: #173f5f;
+}
+
+/* Quiz */
+
+#quiz {
+    text-align: center;
+    background-color: #eef5fa;
+    max-width: none;
+}
+
+#quiz button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #20639b;
+    color: white;
+    cursor: pointer;
+}
+
+#quiz button:hover {
+    background-color: #173f5f;
+}
+
+#quizAnswer {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+/* Survey */
+
+#survey {
+    background-color: white;
+    max-width: none;
+}
+
+form {
+    max-width: 650px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+form button {
+    display: block;
+    margin: 25px auto 0;
+    padding: 12px 25px;
+    background-color: #20639b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #173f5f;
+}
+
+#message {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #102f45;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Mobile view */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+
+    .box {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #social {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}

@@ -1,0 +1,210 @@
+<html>
+    <head>
+        <title>Responsible Netizens</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!-- Header -->
+         <header>
+            <h1>Responsible Netizens</h1>
+            <p>Need of the Hour</p>
+         </header>
+
+         <!-- Navigation -->
+          <nav>
+            <a href="#home">Home</a>
+            <a href="#safety">Online safety</a>
+            <a href="#social">Social Media</a>
+            <a href="#fake">Fake News</a>
+            <a href="#quiz">Quiz</a>
+            <a href="#survey">Survey</a>
+
+          </nav>
+
+          <!-- Home -->
+           <section id="home">
+            <h2>Welcome</h2>
+
+            <p> 
+                The internet has become an important part of our daily life.
+                We use it for education, communication, entertainment and work.
+            </p>
+
+            <p>
+                A responsible netizens is a person who uses the internet safely,
+                respectfully and wisely.
+            </p>
+
+            <h3>Think Before You Click!</h3>
+           </section>
+
+           <!-- Online Safety -->
+            <section id="safety">
+                <h2>Online Safety</h2>
+
+                <div class="box">
+                    <h3>Use Strong Passwords</h3>
+                    <p>
+                        Create strong passwords and avoid using the same password everywhere.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <h3>Never Share OTP</h3>
+                    <p>
+                        Never share your OTP, PIN or password with anyone.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <h3>Avoid Suspicious Links</h3>
+                    <p>
+                        Do not click links received from unknown or Suspicious
+                        sources.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <h3>Protect Personal Information</h3>
+                    <p>
+                        Avoid sharing personal information publicly on the internet.
+                    </p>
+                </div>
+                
+            </section>
+
+            <!-- Socail Media -->
+             <section id="social">
+                <h2>Responsible Social Media Use</h2>
+
+                <h3>Good uses</h3>
+
+                <ul>
+                    <li>Learning new skills</li>
+                    <li>Educational information</li>
+                    <li>Communication with friends and family</li>
+                    <li>Career and professional networking</li>
+                </ul>
+
+                <h3>Things to Avoid</h3>
+
+                <ul>
+                    <li>Excessive scrolling</li>
+                    <li>Sharing private information</li>
+                    <li>Believing every post is true</li>
+                    <li>Spreading rumours</li>
+                </ul>
+             </section>
+
+             <!-- Fake news -->
+              <section id="fake">
+                <h2>Fake News and Misinformation</h2>
+
+                <p>
+                    Fake news is false or misleading information shared as if it were true.
+                </p>
+
+                <p>
+                    Before sharing any information, check the source, date and other reliable sources.
+                </p>
+
+                <div class="question">
+                    <h3>
+                        You receive a message saying you have won a fress phone. What should you do?
+                    </h3>
+
+                    <button onclick="fakeNews()">Check Answer</button>
+
+                    <p id="fakeAnswer"></p>
+
+                </div>
+              </section>
+
+              <!--Quiz -->
+              <section id="quiz">
+                <h2>Small Awareness Quiz</h2>
+
+                <h3>
+                    Should you share your OTP with someone who calls you?
+                </h3>
+
+                <button onclick="quizAnswer('yes')">Yes</button>
+                <button onclick="quizAnswer('no')">No</button>
+                <p id="quizAnswer"></p>
+              </section>
+
+              <!-- Survey -->
+               <section id="survey">
+                <h2>Awareness Survey</h2>
+
+                <p> Please answer the following questions for our field project.
+
+                </p>
+
+                <form id="surveyForm">
+                    <label>Name:</label>
+                    <input type="text" id="name" required>
+
+                    <label>Age Group:</label>
+                    <select id="age" required>
+                        <option value="">Select</option>
+                        <option>Below 18</option>
+                        <option>18 - 25</option>
+                        <option>26 - 40</option>
+                        <option>Above 40</option>
+                    </select>
+
+                    <label>Do you know about phishing?</label>
+                    <select id="phishing" required>
+                       <option>Yes</option>
+                       <option>No</option> 
+                    </select>
+
+                    <label>
+                        Do you verify information before sharing it?
+                    </label>
+
+                    <select id="verify" required>
+                        <option value="">Select</option>
+                        <option>Always</option>
+                        <option>Sometimes</option>
+                        <option>Never/option>
+                    </select>
+
+                    <label>Do you know how to protect your online privacy?</label>
+
+                    <select id="privacy" required>
+                        <option value="">Select</option>
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select>
+
+                    <button type="submit">Submit Survey</button>
+                    
+                </form>
+
+                <p id="message"></p>
+               </section>
+
+               <!-- Conclusion -->
+                <section>
+                    <h2>Conclusion</h2>
+
+                    <p> 
+                        Being a responsible netizen is everyone's responsiblity.
+                        We should use the internet carefully, respect others, 
+                        protect our information and verify information before
+                        sharing it.
+                    </p>
+
+                    <h3>Be Smart. Be Safe. Be Responsible.</h3>
+                </section>
+
+                <!-- Footer-->
+                 <footer>
+                    <p>Responsible Netizens - Field Project 2026</p>
+                 </footer>
+                 <script src="script.js"></script>
+    </body>
+</html>
