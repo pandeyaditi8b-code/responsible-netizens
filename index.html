@@ -12,15 +12,14 @@
          </header>
 
          <!-- Navigation -->
-          <nav>
-            <a href="#home">Home</a>
-            <a href="#safety">Online safety</a>
-            <a href="#social">Social Media</a>
-            <a href="#fake">Fake News</a>
-            <a href="#quiz">Quiz</a>
-            <a href="#survey">Survey</a>
-
-          </nav>
+        <nav>
+    <a href="#home">Home</a>
+    <a href="#safety">Online Safety</a>
+    <a href="#social">Social Media</a>
+    <a href="#fake">Fake News</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#feedback">Feedback</a>
+</nav>
 
           <!-- Home -->
            <section id="home">
@@ -32,7 +31,7 @@
             </p>
 
             <p>
-                A responsible netizens is a person who uses the internet safely,
+                A responsible netizen is a person who uses the internet safely,
                 respectfully and wisely.
             </p>
 
@@ -40,44 +39,52 @@
            </section>
 
            <!-- Online Safety -->
-            <section id="safety">
-                <h2>Online Safety</h2>
+<section id="safety">
 
-                <div class="box">
-                    <h3>Use Strong Passwords</h3>
-                    <p>
-                        Create strong passwords and avoid using the same password everywhere.
-                    </p>
-                </div>
+    <h2>🛡️ Online Safety</h2>
 
-                <div class="box">
-                    <h3>Never Share OTP</h3>
-                    <p>
-                        Never share your OTP, PIN or password with anyone.
-                    </p>
-                </div>
+    <div class="image-box">
+        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3"
+             alt="Online Security">
+    </div>
 
-                <div class="box">
-                    <h3>Avoid Suspicious Links</h3>
-                    <p>
-                        Do not click links received from unknown or Suspicious
-                        sources.
-                    </p>
-                </div>
+    <div class="box">
+        <h3>🔐 Use Strong Passwords</h3>
+        <p>
+            Create strong passwords and avoid using the same password
+            for every account.
+        </p>
+    </div>
 
-                <div class="box">
-                    <h3>Protect Personal Information</h3>
-                    <p>
-                        Avoid sharing personal information publicly on the internet.
-                    </p>
-                </div>
-                
-            </section>
+    <div class="box">
+        <h3>🔑 Never Share OTP</h3>
+        <p>
+            Never share your OTP, PIN or password with anyone.
+        </p>
+    </div>
 
+    <div class="box">
+        <h3>🎣 Avoid Suspicious Links</h3>
+        <p>
+            Do not click links received from unknown or suspicious sources.
+        </p>
+    </div>
+
+    <div class="box">
+        <h3>🔒 Protect Personal Information</h3>
+        <p>
+            Avoid sharing personal information publicly on the internet.
+        </p>
+    </div>
+
+</section>
             <!-- Socail Media -->
              <section id="social">
                 <h2>Responsible Social Media Use</h2>
-
+<img
+    src="https://images.unsplash.com/photo-1611162617474-5b21e879e113"
+    alt="Social Media"
+    class="section-image">
                 <h3>Good uses</h3>
 
                 <ul>
@@ -100,6 +107,11 @@
              <!-- Fake news -->
               <section id="fake">
                 <h2>Fake News and Misinformation</h2>
+
+                <img
+    src="https://images.unsplash.com/photo-1586339949916-3e9457bef6d3"
+    alt="News and information"
+    class="section-image">
 
                 <p>
                     Fake news is false or misleading information shared as if it were true.
@@ -134,58 +146,55 @@
                 <p id="quizAnswer"></p>
               </section>
 
-              <!-- Survey -->
-               <section id="survey">
-                <h2>Awareness Survey</h2>
+              <!-- Feedback -->
+<section id="feedback">
 
-                <p> Please answer the following questions for our field project.
+    <h2>💬 Give Your Feedback</h2>
 
-                </p>
+    <p>
+        We would love to know what you think about our
+        Responsible Netizens awareness website.
+    </p>
 
-                <form id="surveyForm">
-                    <label>Name:</label>
-                    <input type="text" id="name" required>
+    <form id="feedbackForm">
 
-                    <label>Age Group:</label>
-                    <select id="age" required>
-                        <option value="">Select</option>
-                        <option>Below 18</option>
-                        <option>18 - 25</option>
-                        <option>26 - 40</option>
-                        <option>Above 40</option>
-                    </select>
+        <label>Your Name:</label>
+        <input type="text" id="feedbackName" required>
 
-                    <label>Do you know about phishing?</label>
-                    <select id="phishing" required>
-                       <option>Yes</option>
-                       <option>No</option> 
-                    </select>
+        <label>Did you find this website useful?</label>
 
-                    <label>
-                        Do you verify information before sharing it?
-                    </label>
+        <select id="useful" required>
+            <option value="">Select</option>
+            <option>Yes</option>
+            <option>Somewhat</option>
+            <option>No</option>
+        </select>
 
-                    <select id="verify" required>
-                        <option value="">Select</option>
-                        <option>Always</option>
-                        <option>Sometimes</option>
-                        <option>Never/option>
-                    </select>
+        <label>How would you rate this website?</label>
 
-                    <label>Do you know how to protect your online privacy?</label>
+        <select id="rating" required>
+            <option value="">Select Rating</option>
+            <option>5 - Excellent</option>
+            <option>4 - Very Good</option>
+            <option>3 - Good</option>
+            <option>2 - Average</option>
+            <option>1 - Needs Improvement</option>
+        </select>
 
-                    <select id="privacy" required>
-                        <option value="">Select</option>
-                        <option>Yes</option>
-                        <option>No</option>
-                    </select>
+        <label>What did you learn from this website?</label>
 
-                    <button type="submit">Submit Survey</button>
-                    
-                </form>
+        <textarea id="comment"
+                  rows="5"
+                  placeholder="Write your feedback here..."
+                  required></textarea>
 
-                <p id="message"></p>
-               </section>
+        <button type="submit">Submit Feedback</button>
+
+    </form>
+
+    <p id="feedbackMessage"></p>
+
+</section>
 
                <!-- Conclusion -->
                 <section>
